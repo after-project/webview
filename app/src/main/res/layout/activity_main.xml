@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/ButtonLoadUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Url"></Button>
+            <Button
+                android:id="@+id/ButtonLoadData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Data"></Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/ButtonLoadSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Site bing.com"></Button>
+            <Button
+                android:id="@+id/ButtonLoadBlank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load About:Blank"></Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ButtonLoadLocalHtmlFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Local Html File"></Button>
+            <Button
+                android:id="@+id/ButtonRunJavaScript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Run Java Script"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
